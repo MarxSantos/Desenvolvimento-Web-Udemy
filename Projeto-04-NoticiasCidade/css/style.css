@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url("../imagens/fundo.png") repeat-x;
+}
+
+/*Formatação do Container-Geral*/
+#container-geral{
+    width: 750px;
+    margin: 0 auto;
+}
+/*------------------------------*/
+
+
+
+/*Formatação da areao do topo*/
+#topo{
+    height: 150px;
+    background: url("../imagens/detalhe-topo.png") no-repeat right top;
+    padding-top: 25px;
+}/*------------------------------*/
+
+
+
+/*Formatação da logo*/
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url("../imagens/logo.png") no-repeat center;
+    text-indent: -3000px;
+}/*------------------------------*/
+
+
+
+/*Formatação da barra de navegação superior*/
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #B10333;
+    float: left;
+}
+
+#topo ul li{
+    float: left;
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: #fff;
+    background: url("../imagens/divisor.png")no-repeat left center;
+}
+
+#topo ul .primeiro a{
+    background: none;
+}
+
+#topo ul a:hover{
+    color: #69001d;
+} 
+/*------------------------------*/
+
+
+
+/*Formatação para marcar a pagina atual na barra de navegação*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+    color: #fff;
+    background: #DE003E;
+    cursor: text;    
+}/*------------------------------*/
+
+body.jose-almeida #navegacao-lateral a#jose-almeida,
+body.felipe-silva #navegacao-lateral a#felipe-silva,
+body.renato-rodrigues #navegacao-lateral a#renato-rodrigues,
+body.aberlado-silveira #navegacao-lateral a#aberlado-silveira,
+body.andre-carlos #navegacao-lateral a#andre-carlos,
+body.marcio-mello #navegacao-lateral a#marcio-mello,
+body.joao-pedro #navegacao-lateral a#joao-pedro,
+body.fernando-weiss #navegacao-lateral a#fernando-weiss{
+    background: #f9f9f9 url("../imagens/marcador.png")no-repeat left center;
+    padding-left: 20px; 
+    color: #a1a1a1;  
+}
+
+
+/*Formatação do container do conteudo*/
+#container-conteudo{
+    margin-top: 60px;
+    
+    float: left;
+}/*------------------------------*/
+
+
+
+/*Formatação da barra de navegação lateral*/
+#conteudo-lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;    
+}
+
+.caixa{
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3 url("../imagens/fundo-caixa.png");
+}
+
+h2{
+   font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#conteudo-lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#conteudo-lateral ul a:hover{
+    background: #f9f9f9 url("../imagens/marcador.png")no-repeat left center;
+    padding-left: 20px; 
+    color: #a1a1a1;
+}
+
+#conteudo-lateral .ultimo a{
+    border-bottom: none;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 150px;
+    font-size: 0.9em;
+    background-color: #fff;    
+    border: 1px solid #B0AEAE;
+}
+
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+/*--------final da formatação da barra de navegação lateral--------*/
+
+
+
+/*Formatação do conteudo primario*/
+#conteudo-primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px; 
+}
+
+#duas-colunas #conteudo-primario{
+    width: 555px;
+}
+
+#uma-colunas #conteudo-primario{
+    width: 750px;
+    margin: 0 0 20px 0px;  
+}
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3{
+    background: #b10333;
+    color: #fff;  
+}
+
+.destaque p{
+    text-align: justify;
+}
+
+
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+/*--------final da formatação do conteudo primario--------*/
+
+
+
+/*Formatação do conteudo secundario*/
+#conteudo-secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+    
+}
+
+.entrevista h3{
+    background: #de003e;  
+}
+
+.entrevista p{
+    text-align: justify;
+}
+/*--------final da formatação do conteudo secundario--------*/
+
+
+
+/*Formatação da lista de noticias*/
+.lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+.lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+.lista-noticias li a{
+    text-decoration: none;
+}
+
+.lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+.lista-noticias li a p{
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+.lista-noticias .ultimo a{
+    border-bottom: none;
+}
+
+ li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+li.ultimo{
+    border-bottom: none;
+}
+
+/*Formatação do Rodape*/
+#container-rodape{
+    background: #294C71;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
